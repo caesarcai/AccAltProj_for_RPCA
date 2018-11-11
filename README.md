@@ -12,8 +12,17 @@ When update S, we employ hard thresholding operator with selected threshold valu
 
 Together with the speed of L updating, S updating, and guaranteed global linear convergence, we are currently the fastest provable algorithm for fully observed RPCA.
 
+## Installation
+
 ## Syntex
 
+## Input Description and Parameters Turning
+
+## Output Description
+
+## Warning for AMD CPU Users
+
+## Demo
 
 ## Reference
 [1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated Alternating Projections for Robust Principal Component Analysis. Journal of Machine Learning Research, accepted with minor revision.
