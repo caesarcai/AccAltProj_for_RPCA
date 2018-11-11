@@ -27,8 +27,8 @@ function [ L, S ] = AccAltProj( D, r, para )
 % Principal Component Analysis" if you find this code helpful
 %
 %
-% Warning: We found this code runs very slow on AMD CUPs with earlier 
-% versions of Matlab. For best experience, please use the code on Intel CUP
+% Warning: We found this code runs very slow on AMD CPUs with earlier 
+% versions of Matlab. For best experience, please use the code on Intel CPU
 % based computer, and update Matlab to the latest version.
 %
 %
@@ -41,7 +41,7 @@ addpath PROPACK;
 norm_of_D = norm(D, 'fro'); 
 
 %% Default/Inputed parameters
-max_iter  = 50;
+max_iter  = 100;
 tol       = 1e-5;
 beta      = 1/(2*nthroot(m*n,4));
 beta_init = 4*beta;

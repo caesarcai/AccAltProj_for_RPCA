@@ -32,6 +32,8 @@ para.beta_init = r*sqrt(para.mu(1)*para.mu(end))/(sqrt(m*n));
 para.beta      = r*sqrt(para.mu(1)*para.mu(end))/(4*sqrt(m*n));
 para.trimming  = true;
 para.tol       = 1e-5;
+para.gamma     = 0.5;
+para.max_iter  = 100;
 [L2, S2] = AccAltProj( D, r, para );
 L2_err = norm(L2-L_true,'fro')/norm(L_true,'fro')
 
