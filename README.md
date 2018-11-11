@@ -5,7 +5,7 @@ This is the Matlab code repo for a fast provable non-convex Robust Principal Com
 In this project, we focus on RPCA problem under fully observed setting, that is about separating a low rank matrix $L$ and a sparse outlier matrix $S$ from their sum $D = L + S$.
 
 ## Key Idea for Acceleration
-Alternating projections is a minimization approach that has been successfully used in many fields. Naturally, for RPCA, we want to project between the sets $\mathcal{M} :=$ \{$ (L,S) | L\text{ is low rank}$ \} and $\mathcal{S} :=$ \{$(L,S) | S\text{ is sparse and } L + S =D$\} for convergence, an earlier example of such approach is [2].
+Alternating projections is a minimization approach that has been successfully used in many fields. Naturally, for RPCA, we want to project between the sets $\mathcal{M} :=$ \{$ (L,S) | L\text{ is low rank}$ \} and $\mathcal{S} :=$ \{$(L,S) | S\text{ is sparse and } L + S =D$ \} for convergence, an earlier example of such approach is [2].
 
 In our algorithm, we used a manifold tangent space projection $\mathcal{P}_T$ along with a very small singular value decomposition (SVD) to accelerate the projection onto the manifold $\mathcal{M}$. Our method of L updating is a lot faster than using the full size truncated SVD, and is tied with the other state-of-the-art RPCA algorithms in terms of complexity, such as gradient decent based L updating in [3].
 
@@ -35,6 +35,22 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 
 
 ## Syntex
+Using all default parameters:
+```
+[L, S] = AccAltProj( D, r, '' );
+```
+
+Using custom parameters:
+```
+para.mu        = [5,10];
+para.beta_init = 0.8;
+para.beta      = 0.4;
+para.trimming  = true;
+para.tol       = 1e-10;
+para.gamma     = 0.6;
+para.max_iter  = 100;
+[L, S] = AccAltProj( D, r, para );
+```
 
 ## Input Description and Parameters Turning
 
