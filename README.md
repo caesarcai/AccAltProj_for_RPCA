@@ -33,6 +33,10 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 
 \*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
+## Warning for AMD CPU User
+We found this code runs very slow on AMD CPUs with earlier versions of Matlab. For best experience, please use this code on Intel CPU based computer, and update Matlab to the latest version.
+
+We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out why there is laggy with AMD CPUs. 
 
 ## Syntex
 Using all default parameters:
@@ -55,8 +59,6 @@ para.max_iter  = 100;
 ## Input Description and Parameters Turning
 
 ## Output Description
-
-## Warning for AMD CPU Users
 
 ## Demo
 
