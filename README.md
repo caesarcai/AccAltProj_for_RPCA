@@ -1,16 +1,17 @@
-This is the Matlab code repo for a super fast Robust Principal Component Analysis (RPCA) algorithm introduced in [1], which has theoretical global linear convergence guarantee and high robustness in practice. 
+# AccAltProj for RPCA
+This is the Matlab code repo for a fast provable non-convex Robust Principal Component Analysis (RPCA) algorithm introduced in [1], which has theoretical global linear convergence guarantee and high robustness in practice. 
 
 ## Robust Principal Component Analysis
 In this project, we focus on RPCA problem under fully observed setting, that is about separating a low rank matrix L and a sparse outlier matrix S from their sum D = L + S.
 
 ## Key Idea for Acceleration
-Alternating projections is a minimization approach that has been successfully used in many fields. Naturely, for RPCA, we want to project between the sets \mathcal{L} := {(L,S) | L is low rank} and \mathcal{S} = {(L,S) | S is sparse & L + S =D} for convergence. 
+Alternating projections is a minimization approach that has been successfully used in many fields. Naturally, for RPCA, we want to project between the sets $\mathcal{L} := {(L,S) | L is low rank}$ and $\mathcal{S} = {(L,S) | S is sparse & L + S =D}$ for convergence, an earlier example of such approach is [2].
 
-In our algorithm, we used a manifold tangent space projection \mathcal{P}_T along with a very small singular value decomposition (SVD) to accelerate the projection onto \mathcal{L}. Our method of L updating is a lot faster than the full size truncated SVD in [2], and is tied with the other state-of-the-art RPCA algorithms in terms of complexity, such as gradient decent based L updating in [3].
+In our algorithm, we used a manifold tangent space projection $\mathcal{P}_T$ along with a very small singular value decomposition (SVD) to accelerate the projection onto $\mathcal{L}$. Our method of L updating is a lot faster than using the full size truncated SVD, and is tied with the other state-of-the-art RPCA algorithms in terms of complexity, such as gradient decent based L updating in [3].
 
-When update S, we employ hard thresholding operator with selected threshold values per iteration. In terms of speed, ours are tied with [1], being the fastest S updating method so far. The selected threshold values are proved for supplying the desired sparsity for S under some nature conditions. While [3] uses a sparsification operator that also guarantees the sparsity of S at each iteration, their repeated partial sorting is not only time consuming, but also requires an accurate estimation of the sparsity of the underlaying S.
+When update S, we employ hard thresholding operator with selected threshold values per iteration. In terms of speed, ours are tied with [1], being the fastest S updating method so far. Additionally, the selected threshold values are proved for supplying the desired sparsity for S aat each iterition under some nature conditions. 
 
-Together with the speed of L updating, S updating, and guaranteed global linear convergence, we are currently the fastest provable algorithm for fully observed RPCA.
+Together with the speed of L updating, S updating, and guaranteed global linear convergence, we proudly introduce this fast provable non-convex algorithm for fully observed RPCA, namely AccAltProj.
 
 ## Installation
 
