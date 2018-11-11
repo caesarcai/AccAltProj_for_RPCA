@@ -25,7 +25,6 @@ PROPACK should be installed under the same directory with the other AccAltProj c
  	   	|- AtAfunc.m
 		etc.
 	|- AccAltProj.m
-	|- get_mu_kappa.m
 	|- trim.m
 ```
   
