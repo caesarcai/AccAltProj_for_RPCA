@@ -55,11 +55,21 @@ para.max_iter  = 100;
 [L, S] = AccAltProj( D, r, para );
 ```
 
-## Input Description and Parameters Turning
+## Input Description
+1. D : Observed matrix. Sum of underlying low rank matrix and underlying sparse matrix.
+1. r : Target rank of underlying low rank matrix.
+1. params : parameters for the algorithm.
+	* .max_iter : Maximum number of iterations. (default 50)
+	* .tol : Desired Frobenius norm error. (default 1e-5)
+	* .beta_init : Parameter for thresholding at initialization. (default 4*beta)
+	* .beta : Parameter for thresholding. (default 1/(2*nthroot(m*n,4)))
+	* .gamma : Parameter for desired convergence rate. Value should between 0 and 1. Turn this parameter bigger will slow the convergence speed but tolerate harder problem, such as higher $p$, $r$ or $\mu$. (default 0.5)   
+	* .trimming : Determine whether using trimming step. (default false)
+	* .mu : Incoherence of underlying low rank matrix. Input can be in format of .mu = mu_max, or .mu = [mu_U, mu_V]. (default 5)
 
 ## Output Description
-1. L: The estimated low-rank component of $D$.
-1. S: The estimated sparse component of $D$.
+1. L : The estimated low-rank component of $D$.
+1. S : The estimated sparse component of $D$.
 
 ## Demo
 Clone the codes and install PROPACK. Your directory should read as 
