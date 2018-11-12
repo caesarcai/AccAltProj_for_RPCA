@@ -28,7 +28,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 	|- trim.m
 ```
   
-\*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of AccAltProj.m. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
+\*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
 
 \*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
@@ -60,6 +60,20 @@ para.max_iter  = 100;
 ## Output Description
 
 ## Demo
+Clone the codes and install PROPACK. Your directory should read as 
+```
+	|-PROPACK
+		|- Afunc.m
+ 	   	|- AtAfunc.m
+		etc.
+	|- AccAltProj.m
+	|- get_mu_kappa.m
+	|- test_AccAltProj.m
+	|- trim.m
+```
+You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 demos, one for default parameters (without trim), another for custom parameters based on the properties of ground truth (with trim).
+
+The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
 ## Reference
 [1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated Alternating Projections for Robust Principal Component Analysis. *Journal of Machine Learning Research*, accepted with minor revision.
