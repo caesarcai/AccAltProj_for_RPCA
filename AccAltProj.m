@@ -10,10 +10,11 @@ function [ L, S ] = AccAltProj( D, r, para )
 %   .tol : Desired Frobenius norm error. (default 1e-5)
 %   .beta_init : Parameter for thresholding at initialization. (default
 %                4*beta)
-%   .beta : Parameter for thresholding. (default 1/(2*nthroot(m*n,4)));
+%   .beta : Parameter for thresholding. (default 1/(2*nthroot(m*n,4)))
 %   .gamma : Parameter for desired convergence rate. Value should between 0
 %            and 1. Turn this parameter bigger will slow the convergence
-%            speed but tolerate larger p. (default 0.5)   
+%            speed but tolerate harder problem, such as higher p, r or mu. 
+%            (default 0.5)   
 %   .trimming : Determine whether using trimming step. (default false)
 %   .mu : Incoherence of underlying low rank matrix. Input can be in format
 %         of .mu = mu_max, or .mu = [mu_U, mu_V]. (default 5) 

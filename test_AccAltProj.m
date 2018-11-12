@@ -1,6 +1,6 @@
 clear;
 close all;
-n = 10000;
+n = 2500;
 m = n;
 r = 5;
 p = 0.4;   
