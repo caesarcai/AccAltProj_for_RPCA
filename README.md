@@ -2,7 +2,7 @@
 This is the Matlab code repo for a fast provable non-convex Robust Principal Component Analysis (RPCA) algorithm introduced in [1], which has theoretical global linear convergence guarantee and high robustness in practice. 
 
 ## Robust Principal Component Analysis
-In this project, we focus on RPCA problem under fully observed setting, that is about separating a low rank matrix $L$ and a sparse outlier matrix $S$ from their sum $D = L + S$.
+In this project, we focus on RPCA problem under fully observed setting, that is about separating a low rank matrix $L\in \mathbb{R}^{m\times n}$ and a sparse outlier matrix $S\in \mathbb{R}^{m\times n}$ from their sum $D = L + S$.
 
 ## Key Idea for Acceleration
 Alternating projections is a minimization approach that has been successfully used in many fields. Naturally, for RPCA, we want to project between the sets $\mathcal{M} :=$ \{$ (L,S) | L\text{ is low rank}$ \} and $\mathcal{S} :=$ \{$(L,S) | S\text{ is sparse and } L + S =D$ \} for convergence, an earlier example of such approach is [2].
