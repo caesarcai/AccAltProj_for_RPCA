@@ -58,6 +58,8 @@ para.max_iter  = 100;
 ## Input Description and Parameters Turning
 
 ## Output Description
+1. L: The estimated low-rank component of $D$.
+1. S: The estimated sparse component of $D$.
 
 ## Demo
 Clone the codes and install PROPACK. Your directory should read as 
@@ -76,7 +78,7 @@ You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 
 The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated Alternating Projections for Robust Principal Component Analysis. *Journal of Machine Learning Research*, accepted with minor revision.
+[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research*, accepted with minor revision.
 
 [2] Praneeth Netrapalli, UN Niranjan, Sujay Sanghavi, Animashree Anandkumar, and Prateek Jain. Non-convex robust PCA. *In Advances in Neural Information Processing Systems*, pages 1107–1115, 2014.
 
