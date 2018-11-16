@@ -27,7 +27,7 @@ L1_err = norm(L1-L_true,'fro')/norm(L_true,'fro')
 
 
 %% RieAltProj with trim
-para.mu        = 1.1*get_mu_kappa(L_true,r);  %use mu instead of 1.1*mu will perform even better
+para.mu        = 1.1*get_mu_kappa(L_true,r);  
 para.beta_init = r*sqrt(para.mu(1)*para.mu(end))/(sqrt(m*n));
 para.beta      = r*sqrt(para.mu(1)*para.mu(end))/(4*sqrt(m*n));
 para.trimming  = true;
