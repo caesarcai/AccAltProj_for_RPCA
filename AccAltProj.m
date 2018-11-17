@@ -34,8 +34,8 @@ function [ L, S ] = AccAltProj( D, r, para )
 %
 %
 % By
-% HanQin Cai          , Jian-Feng Cai, Ke Wei
-% caesar-cai@uiowa.edu, jfcai@ust.hk , kewei@fudan.edu.cn
+% HanQin Cai         , Jian-Feng Cai, Ke Wei
+% hqcai@math.ucla.edu, jfcai@ust.hk , kewei@fudan.edu.cn
 
 addpath PROPACK;
 [m,n]     = size(D);
