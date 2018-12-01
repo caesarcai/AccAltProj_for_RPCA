@@ -11,7 +11,7 @@ Alternating projections is a minimization approach that has been successfully us
 
 In our algorithm, we used a manifold tangent space projection $\mathcal{P}_T$ along with a very small singular value decomposition (SVD) to accelerate the projection onto the manifold $\mathcal{M}$. Our method of $L$ updating is a lot faster than using the full size truncated SVD, and is tied with the other state-of-the-art RPCA algorithms in terms of complexity, such as gradient decent based $L$ updating in [3].
 
-When update $S$, we employ hard thresholding operator with selected threshold values per iteration. In terms of speed, ours are tied with [1], being the fastest $S$ updating method so far. Additionally, the selected threshold values are proved for supplying the desired sparsity for $S$ at each iterition under some nature conditions., that is projection onto the set $\mathcal{S}$ .
+When update $S$, we employ hard thresholding operator with selected threshold values per iteration. In terms of speed, ours are tied with [2], being the fastest $S$ updating method as we knew. Additionally, the selected threshold values are proved for supplying the desired sparsity for $S$ at each iterition under some nature conditions., that is projection onto the set $\mathcal{S}$ .
 
 Together with the speed of $L$ updating, $S$ updating, and guaranteed global linear convergence, we proudly introduce this fast provable non-convex algorithm for fully observed RPCA, namely AccAltProj.
 
