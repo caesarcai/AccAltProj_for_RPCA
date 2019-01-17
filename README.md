@@ -30,7 +30,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 |- trim.m
 ```
   
-\*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
+\*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
 
 \*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
