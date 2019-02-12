@@ -37,7 +37,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 ## Warning for AMD CPU User
 We found this code runs very slow on AMD CPUs with earlier versions of Matlab. For best experience, please use this code on Intel CPU based computer, and update Matlab to the latest version.
 
-We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out why there is laggy with AMD CPUs. 
+We suspect earier Matlab versions didn't optimize for the instruction sets of AMD CUPs. We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out exactly why there is latency with AMD CPUs. 
 
 ## Syntex
 Using all default parameters:
@@ -90,8 +90,8 @@ You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 
 The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research*, accepted with minor revision.
+[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research* 20, no. 20 (2019): 1-33.
 
-[2] Praneeth Netrapalli, UN Niranjan, Sujay Sanghavi, Animashree Anandkumar, and Prateek Jain. Non-convex robust PCA. *In Advances in Neural Information Processing Systems*, pages 1107–1115, 2014.
+[2] Praneeth Netrapalli, UN Niranjan, Sujay Sanghavi, Animashree Anandkumar, and Prateek Jain. Non-convex robust PCA. *In Advances in Neural Information Processing Systems*, pp. 1107–1115, 2014.
 
-[3] Xinyang Yi, Dohyung Park, Yudong Chen, and Constantine Caramanis. Fast algorithms for robust PCA via gradient descent. *In Advances in Neural Information Processing Systems*, pages 4152–4160, 2016.
+[3] Xinyang Yi, Dohyung Park, Yudong Chen, and Constantine Caramanis. Fast algorithms for robust PCA via gradient descent. *In Advances in Neural Information Processing Systems*, pp. 4152–4160, 2016.
