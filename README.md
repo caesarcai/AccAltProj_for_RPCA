@@ -37,7 +37,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 ## Warning for AMD CPU User
 We found this code runs very slow on AMD CPUs with earlier versions of Matlab. For best experience, please use this code on Intel CPU based computer, and update Matlab to the latest version.
 
-We suspect earier Matlab versions didn't optimize for the instruction sets of AMD CUPs. We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out exactly why there is latency with AMD CPUs. 
+We suspect earier Matlab versions didn't optimize for the AVX instruction sets of AMD CUPs. We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out exactly why there is latency with AMD CPUs. 
 
 ## Syntex
 Using all default parameters:
