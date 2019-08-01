@@ -65,7 +65,7 @@ para.max_iter  = 100;
 	* .tol : Desired Frobenius norm error. (default 1e-5)
 	* .beta_init : Parameter for thresholding at initialization. (default 4\*beta)
 	* .beta : Parameter for thresholding. (default 1/(2\*nthroot(m\*n,4)))
-	* .gamma : Parameter for desired convergence rate. Value should between 0.3 and 1 (exclude 1 itself). Turn this parameter bigger will slow the convergence speed but tolerate harder problem, such as higher $p$, $r$ or $\mu$. In the extreme cases, our algorithm can recover from a 92% corrupted $D$ by setting gamma = 0.95 (default 0.5)   
+	* .gamma : Parameter for desired convergence rate. Value should between 0.3 and 1 (exclude 1 itself). Turn this parameter bigger will slow the convergence speed but tolerate harder problem, such as higher $\alpha$, $r$ or $\mu$. In the extreme cases, our algorithm can recover from a 92% corrupted $D$ by setting gamma = 0.95 (default 0.5)   
 	* .trimming : Determine whether using trimming step. (default false)
 	* .mu : Incoherence of underlying low rank matrix. Input can be in format of .mu = mu_max, or .mu = [mu_U, mu_V]. (default 5)
 
