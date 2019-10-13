@@ -79,11 +79,12 @@ Clone the codes and install PROPACK. Your directory should read as
 |-PROPACK
 	|- Afunc.m
  	|- AtAfunc.m
-	etc.
+	...
 |- AccAltProj.m
 |- get_mu_kappa.m
 |- test_AccAltProj.m
 |- trim.m
+...
 ```
 You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 demos, one for default parameters (without trim), another for custom parameters based on the properties of ground truth (with trim).
 
