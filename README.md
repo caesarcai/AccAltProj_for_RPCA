@@ -25,9 +25,10 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 |-PROPACK
 	|- Afunc.m
  	|- AtAfunc.m
-	etc.
+	...
 |- AccAltProj.m
 |- trim.m
+...
 ```
   
 \*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
@@ -84,7 +85,6 @@ Clone the codes and install PROPACK. Your directory should read as
 |- get_mu_kappa.m
 |- test_AccAltProj.m
 |- trim.m
-...
 ```
 You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 demos, one for default parameters (without trim), another for custom parameters based on the properties of ground truth (with trim).
 
