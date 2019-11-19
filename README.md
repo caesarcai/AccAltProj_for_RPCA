@@ -40,6 +40,8 @@ We found this code runs very slow on AMD CPUs with earlier versions of Matlab. F
 
 We suspect earier Matlab versions didn't optimize for the AVX instruction sets of AMD CUPs. We welcome you to provide more data points of running AccAltProj on AMD CPUs with different Matlab versions, so we can figure out exactly why there is latency with AMD CPUs. 
 
+Update: We learned that, Matlab calls AVX2 instruction sets for Intel CPU, but calls legacy SSE instruction sets for AMD CPU. While the QR decomp steps in our method have significate prefermence drop with SSE instruction sets, the workaround for AMD user is to active AVX2 for matlab. Read https://www.mathworks.com/matlabcentral/answers/396296-what-if-anything-can-be-done-to-optimize-performance-for-modern-amd-cpu-s?s_tid=ab_old_mlc_ans_email_view for more details.
+
 ## Syntex
 Using all default parameters:
 ```
