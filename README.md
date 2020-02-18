@@ -31,7 +31,7 @@ PROPACK should be installed under the same directory with the other AccAltProj c
 ...
 ```
   
-\*  If user wish not to install PROPACK, they may change "lansvd" to "svds" on line 105 and 110 of *AccAltProj.m*, as well as on line 4 of *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization.
+\*  If user wish not to install PROPACK, or the installation is incorrect, then the program will automatically use "svds" (a built-in truncated SVD function of Matlab) instead of "lansvd" (a truncated SVD function in PROPACK) in *AccAltProj.m* and *get_mu_kappa.m*. This will allow the user to run the algorithm without PROPACK installation, but may significantly impact the speed of initialization when the problem dimension is large.
 
 \*\* User may download a completed AccAltProj package from my personal website, which includes all neccessary parts for running the algorithm directly, without extra installations.
 
