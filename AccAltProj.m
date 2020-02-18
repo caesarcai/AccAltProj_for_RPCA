@@ -37,7 +37,13 @@ function [ L, S ] = AccAltProj( D, r, para )
 % HanQin Cai         , Jian-Feng Cai, Ke Wei
 % hqcai@math.ucla.edu, jfcai@ust.hk , kewei@fudan.edu.cn
 
-addpath PROPACK;
+if exist('.\PROPACK', 'dir')==7
+    addpath PROPACK;
+    propack_exist = true;
+else
+    propack_exist = false;
+end
+
 [m,n]     = size(D);
 norm_of_D = norm(D, 'fro'); 
 
@@ -103,12 +109,21 @@ timer  = -1*ones(max_iter,1);
 
 tic;
 %%Initilization 
-zeta = beta_init * lansvd(D,1); 
+if propack_exist
+    zeta = beta_init * lansvd(D,1);
+else
+    zeta = beta_init * svds(D,1);
+end
 % When S is sparse enough, we may store S as a sparse matrix. This can save
 % some memory and computing when problem size is large.
 S = wthresh( D ,'h',zeta);    
 
-[U,Sigma,V] = lansvd(D - S, r, 'L');
+if propack_exist
+    [U,Sigma,V] = lansvd(D - S, r, 'L');
+else
+    [U,Sigma,V] = svds(D - S, r);
+end
+
 L = U * Sigma * V';
 
 zeta = beta * Sigma(1,1); 
