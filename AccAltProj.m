@@ -48,11 +48,11 @@ end
 norm_of_D = norm(D, 'fro'); 
 
 %% Default/Inputed parameters
-max_iter  = 100;
+max_iter  = 200;
 tol       = 1e-5;
 beta      = 1/(2*nthroot(m*n,4));
 beta_init = 4*beta;
-gamma     = 0.5;    
+gamma     = 0.65;    
 mu        = 5;     
 trimming  = false;
 
