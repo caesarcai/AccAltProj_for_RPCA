@@ -1,10 +1,10 @@
 clear;
 close all;
-n = 2500;
-m = n;
-r = 5;
-p = 0.4;   
-c = 1;   
+n     = 2500;
+m     = n;
+r     = 5;
+alpha = 0.4;   
+c     = 1;   
 
 %% Generate a RPCA problem
 A_generater = randn(m,r);
@@ -12,7 +12,7 @@ B_generater = randn(r,n);
 L_true = A_generater * B_generater;
 norm_of_L_true = norm(L_true,'fro');
 
-S_supp_idx = randsample(m*n, round(p*m*n), false);
+S_supp_idx = randsample(m*n, round(alpha*m*n), false);
 S_range = c*mean(mean(abs(L_true)));
 S_temp = 2*S_range*rand(m,n)-S_range; 
 S_true = zeros(m, n);
