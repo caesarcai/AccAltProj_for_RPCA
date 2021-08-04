@@ -95,8 +95,8 @@ You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 
 The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
 ## Reference
-[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research* 20, no. 1 (2019): 685-717.
+[1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research* 20(1), 685-717, 2019.
 
-[2] Praneeth Netrapalli, UN Niranjan, Sujay Sanghavi, Animashree Anandkumar, and Prateek Jain. Non-convex robust PCA. *In Advances in Neural Information Processing Systems*, pp. 1107–1115, 2014.
+[2] Praneeth Netrapalli, UN Niranjan, Sujay Sanghavi, Animashree Anandkumar, and Prateek Jain. Non-convex robust PCA. *In Advances in Neural Information Processing Systems*, 1107–1115, 2014.
 
-[3] Xinyang Yi, Dohyung Park, Yudong Chen, and Constantine Caramanis. Fast algorithms for robust PCA via gradient descent. *In Advances in Neural Information Processing Systems*, pp. 4152–4160, 2016.
+[3] Xinyang Yi, Dohyung Park, Yudong Chen, and Constantine Caramanis. Fast algorithms for robust PCA via gradient descent. *In Advances in Neural Information Processing Systems*, 4152–4160, 2016.
