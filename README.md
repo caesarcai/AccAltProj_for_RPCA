@@ -1,5 +1,5 @@
 # AccAltProj for RPCA
-This is the Matlab code repo for a fast provable non-convex Robust Principal Component Analysis (RPCA) algorithm introduced in [1], which has theoretical global linear convergence guarantee and high robustness in practice. 
+This is the Matlab code repo for a fast provable non-convex Robust Principal Component Analysis (RPCA) algorithm introduced in <a href=https://jmlr.org/papers/v20/18-022.html>[1]</a>, which has theoretical global linear convergence guarantee and high robustness in practice. 
 
 ###### To display math symbols properly, one may have to install a MathJax plugin. For example, [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima?hl=en).
 
