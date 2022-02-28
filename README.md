@@ -94,6 +94,9 @@ You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 
 
 The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
+## Video Demo
+https://youtu.be/k6uaeQky2sc
+
 ## Reference
 [1] HanQin Cai, Jian-Feng Cai, and Ke Wei. Accelerated alternating projections for robust principal component analysis. *Journal of Machine Learning Research* 20(1), 685-717, 2019.
 
