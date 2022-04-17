@@ -90,9 +90,9 @@ Clone the codes and install PROPACK. Your directory should read as
 |- test_AccAltProj.m
 |- trim.m
 ```
-You may run the demo file *test_AccAltProj.m* directly from here. It contains 2 demos, one for default parameters (without trim), another for custom parameters based on the properties of ground truth (with trim).
+You may run the demo file `test_AccAltProj.m` directly from here. It contains 2 demos, one for default parameters (without trim), another for custom parameters based on the properties of ground truth (with trim).
 
-The file *get_mu_kappa.m* yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
+The file `get_mu_kappa.m` yields the properties of true $L$, this is used for parameters turning propose only. In reality, the user needs to estimate these properties if wishes to use custom $\mu$ and $\beta$.
 
 ## Video Demo
 https://youtu.be/k6uaeQky2sc
