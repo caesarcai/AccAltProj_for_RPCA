@@ -44,6 +44,8 @@ We suspect earier Matlab versions didn't optimize for the AVX instruction sets o
 
 Update: We learned that, Matlab calls AVX2 instruction sets for Intel CPU, but calls legacy SSE instruction sets for AMD CPU. While the QR decomp steps in our method have significate prefermence drop with SSE instruction sets, the workaround for AMD user is to active AVX2 for matlab. Read https://www.mathworks.com/matlabcentral/answers/396296-what-if-anything-can-be-done-to-optimize-performance-for-modern-amd-cpu-s?s_tid=ab_old_mlc_ans_email_view for more details.
 
+Update 2: According to the release note of Mathworks, AMD user should have **2020b** or later for the best Matlab experience. 
+
 ## Syntex
 Using all default parameters:
 ```
